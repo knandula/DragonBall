@@ -1,0 +1,119 @@
+﻿@model IEnumerable<ZzaWeb.ZzaService.Client>
+
+@{
+    ViewBag.Title = "List of Machines";
+}
+
+<h2></h2>
+
+@{
+    using (Html.BeginForm("Index", "CLients", FormMethod.Get))
+    {
+        @Html.TextBox("hostname")<br/><br/>
+    <input type="submit" value="search"/>
+    }
+
+}
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <table class="table table-hover" id="tab_logic">
+                <tr>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.HostName)
+                    </th>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.IpAddress)
+                    </th>
+                      <th class="text-left">
+                        @Html.DisplayNameFor(model => model.Username)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HostName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IpAddress)
+                        </td>
+                         <td>
+                            @Html.DisplayFor(modelItem => item.Username)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new {id = item.ID},new { @class = "btn btn-primary right"}) 
+                        </td>
+                        <td>
+                            @Html.ActionLink("Tasks", "Details", new {id = item.ID},new { @class = "btn btn-primary right"}) 
+                        </td>
+                        <td>
+                            @{
+                                using (Html.BeginForm("Delete", "CLients", new {id = item.ID}))
+                                {
+                                 <input type="submit" class="btn btn-danger" value="delete"/>
+                                }
+
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+        <p class="btn btn-default pull-left">
+    @Html.ActionLink("Create New", "Create")
+</p>
+    </div>
+</div>
+
+@*<div class="container">
+    <div class="row clearfix">
+		<div class="col-md-12 column">
+			<table class="table table-hover" id="tab_logic">
+				<thead>
+					<tr >
+						<th class="text-center" width="2%">
+							#
+						</th>
+						<th class="text-center" width="2%">
+							 
+						</th>
+						<th class="text-center">
+							
+						</th>
+						<th class="text-center">
+							
+						</th>
+                        <th class="text-center">
+    						
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id='addr0'>
+						<td>
+						<i class="fa fa-th text-muted"></i> 
+						</td>
+						<td>
+						    <i class="fa fa-user"></i> 
+						</td>
+						<td>
+						 <i class="fa fa-envelope-o">  Task name </i> 
+						</td>
+                        <td>
+    					 <i class="fa fa-map-marker">  255 Oak Str, Kohovos, 685 01 </i> 
+						</td>
+						<td>
+						  <i class="fa fa-calendar"></i> 22.12/.2014
+						</td>
+					</tr>
+                    <tr id='addr1'></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a>
+</div>*@

@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ZzaWeb.ZzaService.Task>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Scheduled Tasks</h2>
+
+ 
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <table class="table table-hover" id="tab_logic">
+                <tr>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                      <th class="text-left">
+                        @Html.DisplayNameFor(model => model.OutputLog)
+                    </th>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.Command)
+                    </th>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.Path)
+                    </th>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.TaskName)
+                    </th>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.TaskType)
+                    </th>
+                   
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                          <td>
+                            @Html.DisplayFor(modelItem => item.OutputLog)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Command)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Path)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TaskName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TaskType)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit","Task", new { id=item.taskID}, new {@class = "btn btn-primary right"}) |
+                            @Html.ActionLink("Delete", "Delete","Task", new { id=item.taskID }, new {@class = "btn btn-primary right"})
+                            @Html.ActionLink("Schedule", "Details","Schedule",new { id=item.taskID }, new {@class = "btn btn-primary right"})
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+        <p class="btn btn-default pull-left">
+    @Html.ActionLink("Create New", "Create","Task")
+</p>
+    </div></div>

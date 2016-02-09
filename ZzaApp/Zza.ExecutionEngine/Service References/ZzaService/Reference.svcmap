@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3251add3-85a4-4673-a4de-db2278c92ed9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:12977/ZzaService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ZzaService.disco" MetadataType="Disco" ID="851c1f96-277d-47c2-995e-db6bde284a2d" SourceId="1" SourceUrl="http://localhost:12977/ZzaService.svc?disco" />
+    <MetadataFile FileName="ZzaService.wsdl" MetadataType="Wsdl" ID="7a32a969-1b0a-42ef-bd5d-ce7352b80877" SourceId="1" SourceUrl="http://localhost:12977/ZzaService.svc?wsdl" />
+    <MetadataFile FileName="ZzaService.xsd" MetadataType="Schema" ID="46e2df9b-2e43-4757-8513-d89d6207d011" SourceId="1" SourceUrl="http://localhost:12977/ZzaService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ZzaService1.xsd" MetadataType="Schema" ID="97fdf67f-71c3-44fd-a505-886e62213763" SourceId="1" SourceUrl="http://localhost:12977/ZzaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ZzaService2.xsd" MetadataType="Schema" ID="c6d09f2b-2789-4ae5-b830-2a4c4b79ca4c" SourceId="1" SourceUrl="http://localhost:12977/ZzaService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

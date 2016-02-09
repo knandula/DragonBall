@@ -1,0 +1,158 @@
+﻿@model ZzaWeb.ZzaService.Schedule
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Schedule</legend>
+
+            <div class="editor-label">
+            @Html.LabelFor(model => model.startAt)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.startAt)
+            @Html.ValidationMessageFor(model => model.startAt)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.endAt)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.endAt)
+            @Html.ValidationMessageFor(model => model.endAt)
+        </div>
+
+   @*     <div class="editor-label">
+            @Html.LabelFor(model => model.endAtSpecified)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.endAtSpecified)
+            @Html.ValidationMessageFor(model => model.endAtSpecified)
+        </div>*@
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.intHours)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.intHours)
+            @Html.ValidationMessageFor(model => model.intHours)
+        </div>
+
+      @*  <div class="editor-label">
+            @Html.LabelFor(model => model.intHoursSpecified)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.intHoursSpecified)
+            @Html.ValidationMessageFor(model => model.intHoursSpecified)
+        </div>*@
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.intMin)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.intMin)
+            @Html.ValidationMessageFor(model => model.intMin)
+        </div>
+
+@*        <div class="editor-label">
+            @Html.LabelFor(model => model.intMinSpecified)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.intMinSpecified)
+            @Html.ValidationMessageFor(model => model.intMinSpecified)
+        </div>*@
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.intSec)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.intSec)
+            @Html.ValidationMessageFor(model => model.intSec)
+        </div>
+
+@*        <div class="editor-label">
+            @Html.LabelFor(model => model.intSecSpecified)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.intSecSpecified)
+            @Html.ValidationMessageFor(model => model.intSecSpecified)
+        </div>*@
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.repeatforever)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.repeatforever)
+            @Html.ValidationMessageFor(model => model.repeatforever)
+        </div>
+
+      @*  <div class="editor-label">
+            @Html.LabelFor(model => model.repeatforeverSpecified)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.repeatforeverSpecified)
+            @Html.ValidationMessageFor(model => model.repeatforeverSpecified)
+        </div>*@
+
+      @*  <div class="editor-label">
+            @Html.LabelFor(model => model.sID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.sID)
+            @Html.ValidationMessageFor(model => model.sID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.sIDSpecified)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.sIDSpecified)
+            @Html.ValidationMessageFor(model => model.sIDSpecified)
+        </div>*@
+
+    
+
+    @*    <div class="editor-label">
+            @Html.LabelFor(model => model.startAtSpecified)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.startAtSpecified)
+            @Html.ValidationMessageFor(model => model.startAtSpecified)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.taskID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.taskID)
+            @Html.ValidationMessageFor(model => model.taskID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.taskIDSpecified)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.taskIDSpecified)
+            @Html.ValidationMessageFor(model => model.taskIDSpecified)
+        </div>*@
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

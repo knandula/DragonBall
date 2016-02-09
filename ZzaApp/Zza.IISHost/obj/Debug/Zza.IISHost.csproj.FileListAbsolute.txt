@@ -1,0 +1,15 @@
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\Zza.IISHost.dll
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\Zza.IISHost.pdb
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\EntityFramework.dll
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\EntityFramework.SqlServer.dll
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\Zza.Services.dll
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\Zza.Entities.dll
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\Zza.Data.dll
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\Zza.Services.pdb
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\EntityFramework.xml
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\EntityFramework.SqlServer.xml
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\Zza.Entities.pdb
+C:\start\CrossOver\ZzaApp\Zza.IISHost\bin\Zza.Data.pdb
+C:\start\CrossOver\ZzaApp\Zza.IISHost\obj\Debug\Zza.IISHost.csprojResolveAssemblyReference.cache
+C:\start\CrossOver\ZzaApp\Zza.IISHost\obj\Debug\Zza.IISHost.dll
+C:\start\CrossOver\ZzaApp\Zza.IISHost\obj\Debug\Zza.IISHost.pdb

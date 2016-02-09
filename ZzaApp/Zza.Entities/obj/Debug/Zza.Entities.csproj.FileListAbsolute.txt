@@ -1,0 +1,4 @@
+C:\start\CrossOver\ZzaApp\Zza.Entities\bin\Debug\Zza.Entities.dll
+C:\start\CrossOver\ZzaApp\Zza.Entities\bin\Debug\Zza.Entities.pdb
+C:\start\CrossOver\ZzaApp\Zza.Entities\obj\Debug\Zza.Entities.dll
+C:\start\CrossOver\ZzaApp\Zza.Entities\obj\Debug\Zza.Entities.pdb

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ZzaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:12977/ZzaService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:12977/ZzaService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:12977/ZzaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Zza.Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IZzaService_GetMachineInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMachineInfo" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetMachineInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMachineInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetTaskInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaskInfo" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetTaskInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaskInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetMachineInfoById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMachineInfoById" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetMachineInfoById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMachineInfoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetTaskInfoById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaskInfoById" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetTaskInfoById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaskInfoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_UpdateClientInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClientInformation" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_UpdateClientInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateClientInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_CreateClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateClient" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_CreateClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_TaskDone_InputMessage">
+    <wsdl:part name="parameters" element="tns:TaskDone" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_TaskDone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TaskDoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_DeleteClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClient" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_DeleteClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetDetailsView_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailsView" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetDetailsView_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailsViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetScheduleByTaskId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleByTaskId" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetScheduleByTaskId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleByTaskIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_UpdateTaskInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTaskInformation" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_UpdateTaskInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTaskInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_CreateTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTask" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_CreateTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_DeleteTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTask" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_DeleteTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetSchedules_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedules" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetSchedules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_HelloWorld_InputMessage">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_HelloWorld_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_CreateSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_CreateSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_DeleteSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_DeleteSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetScheduleInfoById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoById" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_GetScheduleInfoById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_UpdateScheduleInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScheduleInformation" />
+  </wsdl:message>
+  <wsdl:message name="IZzaService_UpdateScheduleInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScheduleInformationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IZzaService">
+    <wsdl:operation name="GetMachineInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/GetMachineInfo" message="tns:IZzaService_GetMachineInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/GetMachineInfoResponse" message="tns:IZzaService_GetMachineInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaskInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/GetTaskInfo" message="tns:IZzaService_GetTaskInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/GetTaskInfoResponse" message="tns:IZzaService_GetTaskInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineInfoById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/GetMachineInfoById" message="tns:IZzaService_GetMachineInfoById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/GetMachineInfoByIdResponse" message="tns:IZzaService_GetMachineInfoById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaskInfoById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/GetTaskInfoById" message="tns:IZzaService_GetTaskInfoById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/GetTaskInfoByIdResponse" message="tns:IZzaService_GetTaskInfoById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClientInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/UpdateClientInformation" message="tns:IZzaService_UpdateClientInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/UpdateClientInformationResponse" message="tns:IZzaService_UpdateClientInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/CreateClient" message="tns:IZzaService_CreateClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/CreateClientResponse" message="tns:IZzaService_CreateClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TaskDone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/TaskDone" message="tns:IZzaService_TaskDone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/TaskDoneResponse" message="tns:IZzaService_TaskDone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/DeleteClient" message="tns:IZzaService_DeleteClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/DeleteClientResponse" message="tns:IZzaService_DeleteClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsView">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/GetDetailsView" message="tns:IZzaService_GetDetailsView_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/GetDetailsViewResponse" message="tns:IZzaService_GetDetailsView_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleByTaskId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/GetScheduleByTaskId" message="tns:IZzaService_GetScheduleByTaskId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/GetScheduleByTaskIdResponse" message="tns:IZzaService_GetScheduleByTaskId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTaskInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/UpdateTaskInformation" message="tns:IZzaService_UpdateTaskInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/UpdateTaskInformationResponse" message="tns:IZzaService_UpdateTaskInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/CreateTask" message="tns:IZzaService_CreateTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/CreateTaskResponse" message="tns:IZzaService_CreateTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/DeleteTask" message="tns:IZzaService_DeleteTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/DeleteTaskResponse" message="tns:IZzaService_DeleteTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/GetSchedules" message="tns:IZzaService_GetSchedules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/GetSchedulesResponse" message="tns:IZzaService_GetSchedules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/HelloWorld" message="tns:IZzaService_HelloWorld_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/HelloWorldResponse" message="tns:IZzaService_HelloWorld_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/CreateSchedule" message="tns:IZzaService_CreateSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/CreateScheduleResponse" message="tns:IZzaService_CreateSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/DeleteSchedule" message="tns:IZzaService_DeleteSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/DeleteScheduleResponse" message="tns:IZzaService_DeleteSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/GetScheduleInfoById" message="tns:IZzaService_GetScheduleInfoById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/GetScheduleInfoByIdResponse" message="tns:IZzaService_GetScheduleInfoById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScheduleInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZzaService/UpdateScheduleInformation" message="tns:IZzaService_UpdateScheduleInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZzaService/UpdateScheduleInformationResponse" message="tns:IZzaService_UpdateScheduleInformation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IZzaService" type="tns:IZzaService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMachineInfo">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/GetMachineInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaskInfo">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/GetTaskInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineInfoById">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/GetMachineInfoById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaskInfoById">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/GetTaskInfoById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateClientInformation">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/UpdateClientInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateClient">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/CreateClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TaskDone">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/TaskDone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClient">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/DeleteClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsView">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/GetDetailsView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleByTaskId">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/GetScheduleByTaskId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTaskInformation">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/UpdateTaskInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTask">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/CreateTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTask">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/DeleteTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedules">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/GetSchedules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSchedule">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/CreateSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchedule">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/DeleteSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoById">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/GetScheduleInfoById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScheduleInformation">
+      <soap:operation soapAction="http://tempuri.org/IZzaService/UpdateScheduleInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZzaService">
+    <wsdl:port name="BasicHttpBinding_IZzaService" binding="tns:BasicHttpBinding_IZzaService">
+      <soap:address location="http://localhost:12977/ZzaService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

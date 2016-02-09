@@ -1,0 +1,14 @@
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Zza.ExecutionEngine.exe.config
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Zza.ExecutionEngine.exe
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Zza.ExecutionEngine.pdb
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Common.Logging.Core.dll
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Common.Logging.dll
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Quartz.dll
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Common.Logging.pdb
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Common.Logging.xml
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Common.Logging.Core.pdb
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Common.Logging.Core.xml
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Quartz.pdb
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\bin\Debug\Quartz.xml
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\obj\Debug\Zza.ExecutionEngine.exe
+C:\start\CrossOver\ZzaApp\Zza.ExecutionEngine\obj\Debug\Zza.ExecutionEngine.pdb

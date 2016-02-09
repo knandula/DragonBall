@@ -1,0 +1,72 @@
+﻿@model ZzaWeb.ZzaService.Task
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Task</legend>
+
+     @*   @Html.HiddenFor(model => model.ClientID);
+
+         <div class="editor-label">
+            @Html.LabelFor(model => model.ClientID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ClientID)
+            @Html.ValidationMessageFor(model => model.ClientID)
+        </div>*@
+
+        
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Command)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Command)
+            @Html.ValidationMessageFor(model => model.Command)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Path)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Path)
+            @Html.ValidationMessageFor(model => model.Path)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TaskName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TaskName)
+            @Html.ValidationMessageFor(model => model.TaskName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TaskType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TaskType)
+            @Html.ValidationMessageFor(model => model.TaskType)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

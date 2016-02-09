@@ -1,0 +1,181 @@
+﻿@model IEnumerable<ZzaWeb.ZzaService.Schedule>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Schedule</legend>
+
+     <table class="table table-hover" id="tab_logic">
+                <tr>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.startAt)
+                    </th>
+                      <th class="text-left">
+                          @Html.DisplayNameFor(model => model.endAt)
+                    </th>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.intHours)
+                    </th>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.intMin)
+                    </th>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.intSec)
+                    </th>
+                    <th class="text-left">
+                        @Html.DisplayNameFor(model => model.repeatforever)
+                    </th>
+                   
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modeltem => item.startAt)
+                        </td>
+                          <td>
+                            @Html.DisplayFor(modeltem => item.endAt)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modeltem => item.intHours)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modeltem => item.intMin)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modeltem => item.intSec)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modeltem => item.repeatforever)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit","Schedule", new { id=item.sID}, new {@class = "btn btn-primary right"}) |
+                            @Html.ActionLink("Delete", "Delete","Schedule", new { id=item.sID }, new {@class = "btn btn-primary right"})
+           
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+@*    <div class="display-label">
+       
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.endAt)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.endAtSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.endAtSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intHours)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intHours)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intHoursSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intHoursSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intMin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intMin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intMinSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intMinSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intSec)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intSec)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intSecSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intSecSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.repeatforever)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.repeatforever)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.repeatforeverSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.repeatforeverSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.sID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.sID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.sIDSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.sIDSpecified)
+    </div>
+
+  
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.startAtSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.startAtSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.taskID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.taskID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.taskIDSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.taskIDSpecified)
+    </div>*@
+</fieldset>
+<p>
+            <p class="btn btn-default pull-left">
+    @Html.ActionLink("Create New", "Create","Schedule")
+</p>
+    @*@Html.ActionLink("Edit", "Edit", new {  id=Model.sID }) |*@
+    
+</p>

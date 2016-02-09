@@ -1,0 +1,14 @@
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\Zza.Services.dll.config
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\Zza.Services.dll
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\Zza.Services.pdb
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\EntityFramework.dll
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\Zza.Data.dll
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\Zza.Entities.dll
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\Zza.Data.pdb
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\Zza.Entities.pdb
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\EntityFramework.xml
+C:\start\CrossOver\ZzaApp\Zza.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\start\CrossOver\ZzaApp\Zza.Services\obj\Debug\Zza.Services.csprojResolveAssemblyReference.cache
+C:\start\CrossOver\ZzaApp\Zza.Services\obj\Debug\Zza.Services.dll
+C:\start\CrossOver\ZzaApp\Zza.Services\obj\Debug\Zza.Services.pdb

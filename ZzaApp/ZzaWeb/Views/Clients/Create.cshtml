@@ -1,0 +1,72 @@
+﻿@model ZzaWeb.ZzaService.Client
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Client</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.HostName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HostName)
+            @Html.ValidationMessageFor(model => model.HostName)
+        </div>
+
+          <div class="editor-label">
+            @Html.LabelFor(model => model.Username)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Username)
+            @Html.ValidationMessageFor(model => model.Username)
+        </div>
+
+          <div class="editor-label">
+            @Html.LabelFor(model => model.Password)
+        </div>
+        <div class="editor-field">
+            @Html.PasswordFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+
+        @Html.HiddenFor(model => model.ID);
+
+        @*
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ID)
+            @Html.ValidationMessageFor(model => model.ID)
+        </div>*@
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IpAddress)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IpAddress)
+            @Html.ValidationMessageFor(model => model.IpAddress)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,16 @@
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\Zza.SelfHost.exe.config
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\Zza.SelfHost.exe
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\Zza.SelfHost.pdb
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\EntityFramework.dll
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\EntityFramework.SqlServer.dll
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\Zza.Services.dll
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\Zza.Entities.dll
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\Zza.Data.dll
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\Zza.Services.pdb
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\EntityFramework.xml
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\EntityFramework.SqlServer.xml
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\Zza.Entities.pdb
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\bin\Debug\Zza.Data.pdb
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\obj\Debug\Zza.SelfHost.csprojResolveAssemblyReference.cache
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\obj\Debug\Zza.SelfHost.exe
+C:\start\CrossOver\ZzaApp\Zza.SelfHost\obj\Debug\Zza.SelfHost.pdb

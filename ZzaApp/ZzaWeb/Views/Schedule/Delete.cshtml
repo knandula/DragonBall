@@ -1,0 +1,131 @@
+﻿@model ZzaWeb.ZzaService.Schedule
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Schedule</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.endAt)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.endAt)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.endAtSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.endAtSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intHours)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intHours)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intHoursSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intHoursSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intMin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intMin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intMinSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intMinSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intSec)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intSec)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.intSecSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.intSecSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.repeatforever)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.repeatforever)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.repeatforeverSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.repeatforeverSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.sID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.sID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.sIDSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.sIDSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.startAt)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.startAt)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.startAtSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.startAtSpecified)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.taskID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.taskID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.taskIDSpecified)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.taskIDSpecified)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
